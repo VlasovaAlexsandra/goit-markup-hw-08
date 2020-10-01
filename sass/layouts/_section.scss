@@ -1,6 +1,12 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @include for-size(mobile) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
 }
 
 .section-btn {
@@ -11,6 +17,14 @@
 .section.no-padding {
     padding-top: 0px;
     padding-bottom: 0px;
+   
+    @include for-size(mobile) {
+        display: none;
+    }
+
+    @include for-size(tablet) {
+        display: none;
+    }
 }
 
 .section__title {

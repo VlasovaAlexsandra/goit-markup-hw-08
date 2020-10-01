@@ -1,6 +1,14 @@
+.prioritet {
+    padding-bottom: 0;
+}
+
 .list__prioritet {
-    max-width: 270px;
+    max-width: 450px;
     flex-grow: 1;
+
+    @include for-size(desktop) {
+        max-width: 270px;
+    }
 }
 
 .list .list__prioritet::before {
@@ -14,6 +22,15 @@
     border-radius: 4px;   
     margin-bottom: 30px;
 }
+
+.list__prioritet .list__text:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+// .list__prioritet .list-text:last-child {
+//     margin-bottom: 0;
+// }
 
 .list--icon-antenna::before {
     background-image: url(../images/icons/i-antenna.svg);    
@@ -31,7 +48,9 @@
     background-image: url(../images/icons/i-astronaut.svg);
 }
 
-.content-box:not(:last-child) {
-    margin-right: 30px;
-}
+// .content-box:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+
 
