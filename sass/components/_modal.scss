@@ -48,10 +48,14 @@
 .modal__close-icon {
     fill: $primary-text-color;
     transition: $transition-fill;
-}
 
-.modal__close-icon:hover,
-.modal__close-icon:focus {    
-    fill: $accent-text-color;
-    transition: $transition-fill;   
+    &:hover {
+        fill: $accent-text-color;
+        transition: $transition-fill;
+    }
+
+    &:focus {
+        fill: $accent-text-color;
+        transition: $transition-fill;
+    }
 }

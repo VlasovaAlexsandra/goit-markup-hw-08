@@ -21,12 +21,12 @@
     display: block;
     align-items: center;
     justify-content: center;
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-    color: $accent-text-color;   
-    transition: $transition-color;
+    &:hover,
+    &:focus {
+        color: $accent-text-color;   
+        transition: $transition-color;
+    }
 }
 
 .icon-container .contact-icon {    
