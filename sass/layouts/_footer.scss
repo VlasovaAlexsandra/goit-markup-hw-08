@@ -1,20 +1,47 @@
 .footer {
-    display: flex;
+    // display: flex;
     background-color: $bgr-footer;
     padding-top: 60px;
     padding-bottom: 60px;   
 }
 
 .footer .address-logo {
-    width: 230px;
+    // width: 230px;
     padding: 0;
-    margin-right: 70px;
     font-size: 14px;
+
+    @include for-size(mobile) {
+        padding-bottom: 60px;
+        width: 100%;
+    }
+
+    @include for-size(desktop) {
+        width: 230px;
+        padding: 0;
+        margin-right: 70px;
+        font-size: 14px;
+    }
 }
 
 .common {
     display: block;   
     padding: 0;
+}
+
+.footer .common-box {
+    @include for-size(mobile) {
+        width: 100%;
+    }
+}
+
+.common__item-list {
+    display: flex;
+
+    @include for-size(mobile) {
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+
 }
 
 .common__title {
@@ -62,6 +89,7 @@
 .address__link {
     color: $address-text-color;
     text-decoration: none;
+    margin-bottom: 8px;
 }
 
 .logo--white {
@@ -69,10 +97,16 @@
 }
 
 .flex-container {
-    display: flex; 
-    width: 1200px;
+    max-width: 480px;
+    text-align: center;
+    
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
+
+    @include for-size(desktop) {
+        display: flex;
+        width: 1200px;
+    }
 }

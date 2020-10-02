@@ -8,7 +8,11 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 1.2;
-    letter-spacing: 0.03em;    
+    letter-spacing: 0.03em; 
+    
+    @include for-size(mobile) {
+        margin-right: 0;
+    }
 
     @include for-size(desktop) {
         font-size: 26px;
